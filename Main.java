@@ -13,6 +13,10 @@ public void start(Stage stage) throws Exception {
     //
     FXMLLoader loader = new FXMLLoader();
     loader.setLocation(getClass().getResource("view.fxml"));
+    
+    stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("Logo-GTRSC-png.png")));
+    
+    stage.setTitle("Mini Project 4 - Survey Form");
 
     Scene scene = new Scene(loader.load());
 
