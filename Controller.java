@@ -1,5 +1,7 @@
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -47,17 +49,19 @@ public class Controller {
     private Button save;
 
     @FXML
-    void initialize() {
-        assert Department != null : "fx:id=\"Department\" was not injected: check your FXML file 'View.fxml'.";
-        assert check1 != null : "fx:id=\"check1\" was not injected: check your FXML file 'View.fxml'.";
-        assert check2 != null : "fx:id=\"check2\" was not injected: check your FXML file 'View.fxml'.";
-        assert check3 != null : "fx:id=\"check3\" was not injected: check your FXML file 'View.fxml'.";
-        assert date != null : "fx:id=\"date\" was not injected: check your FXML file 'View.fxml'.";
-        assert name != null : "fx:id=\"name\" was not injected: check your FXML file 'View.fxml'.";
-        assert radio1 != null : "fx:id=\"radio1\" was not injected: check your FXML file 'View.fxml'.";
-        assert radio2 != null : "fx:id=\"radio2\" was not injected: check your FXML file 'View.fxml'.";
-        assert radio3 != null : "fx:id=\"radio3\" was not injected: check your FXML file 'View.fxml'.";
-        assert save != null : "fx:id=\"save\" was not injected: check your FXML file 'View.fxml'.";
+    void on_submit(ActionEvent event) {
+        String name = this.name.getText();
+        //
+        String date = date.getValue().toString();
+        //
+        String department = "N/A";
+        if (radio1.isSelected()) {
+            department = radio1.getText();
+        } else if (radio2.isSelected()) {
+            department = radio2.getText();
+        } else {
+            department = radio3.getText();
+        }
 
     }
 
