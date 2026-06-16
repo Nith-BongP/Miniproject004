@@ -18,7 +18,7 @@
       <TextField id="name" fx:id="name" layoutX="274.0" layoutY="93.0" />
       <DatePicker id="date" fx:id="date" layoutX="274.0" layoutY="127.0" />
       <CheckBox id="check1" fx:id="check1" layoutX="164.0" layoutY="288.0" mnemonicParsing="false" text="Filter Design" />
-      <RadioButton id="radio1" fx:id="radio1" layoutX="171.0" layoutY="191.0" mnemonicParsing="false" text="Department of GTR">
+      <RadioButton id="radio1" fx:id="GTR" layoutX="171.0" layoutY="191.0" mnemonicParsing="false" text="Department of GTR">
          <toggleGroup>
             <ToggleGroup fx:id="Department" />
          </toggleGroup></RadioButton>
@@ -26,8 +26,8 @@
       <Button id="save" fx:id="save" defaultButton="true" layoutX="292.0" layoutY="356.0" mnemonicParsing="false" onAction="#save" text="save" />
       <Label layoutX="98.0" layoutY="131.0" text="2. What is your date of birth ?" />
       <Label layoutX="97.0" layoutY="173.0" text="3. Which is your department ?" />
-      <RadioButton id="radio2" fx:id="radio2" layoutX="169.0" layoutY="218.0" mnemonicParsing="false" text="Department of GGG" toggleGroup="$Department" />
-      <RadioButton id="radio3" fx:id="radio3" layoutX="169.0" layoutY="243.0" mnemonicParsing="false" text="Department of AMS" toggleGroup="$Department" />
+      <RadioButton id="radio2" fx:id="GGG" layoutX="169.0" layoutY="218.0" mnemonicParsing="false" text="Department of GGG" toggleGroup="$Department" />
+      <RadioButton id="radio3" fx:id="AMS" layoutX="169.0" layoutY="243.0" mnemonicParsing="false" text="Department of AMS" toggleGroup="$Department" />
       <Label layoutX="96.0" layoutY="261.0" prefHeight="8.0" prefWidth="196.0" text="4. Which courses would you like?" />
       <CheckBox id="check2" fx:id="check2" layoutX="164.0" layoutY="313.0" mnemonicParsing="false" text="OOP" />
       <CheckBox id="check3" fx:id="check3" layoutX="164.0" layoutY="338.0" mnemonicParsing="false" text="MS" />
