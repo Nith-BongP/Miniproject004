@@ -4,15 +4,15 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-       public static void main(String[] args) {
+    public static void main(String[] args) {
         launch();
     }
 
-@Override
-public void start(Stage stage) throws Exception {
-    //
-    FXMLLoader loader = new FXMLLoader();
-    loader.setLocation(getClass().getResource("view.fxml"));
+    @Override
+    public void start(Stage stage) throws Exception {
+        //
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("View.fxml"));
     
     stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("Logo-GTRSC-png.png")));
     

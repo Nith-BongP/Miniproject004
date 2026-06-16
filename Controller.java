@@ -52,16 +52,21 @@ public class Controller {
     void on_submit(ActionEvent event) {
         String name = this.name.getText();
         //
-        String date = date.getValue().toString();
+        String dateStr = this.date.getValue() != null ? this.date.getValue().toString() : "N/A";
         //
         String department = "N/A";
         if (radio1.isSelected()) {
             department = radio1.getText();
         } else if (radio2.isSelected()) {
             department = radio2.getText();
-        } else {
+        } else if (radio3.isSelected()) {
             department = radio3.getText();
         }
+        
+        // Output the collected data
+        System.out.println("Name: " + name);
+        System.out.println("Date: " + dateStr);
+        System.out.println("Department: " + department);
 
     }
 
