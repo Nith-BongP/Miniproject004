@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="255.0" layoutY="35.0" text="Label" />
+      <Label layoutX="136.0" layoutY="80.0" text="Label" />
+      <TextField id="name" fx:id="name" layoutX="252.0" layoutY="85.0" />
+      <DatePicker id="date" fx:id="date" layoutX="239.0" layoutY="131.0" />
+      <CheckBox id="check1" fx:id="check1" layoutX="177.0" layoutY="308.0" mnemonicParsing="false" text="CheckBox" />
+      <RadioButton id="radio1" fx:id="radio1" layoutX="170.0" layoutY="217.0" mnemonicParsing="false" text="RadioButton" />
+      <Label layoutX="535.0" layoutY="347.0" text="Label" />
+      <Button id="save" fx:id="save" layoutX="292.0" layoutY="356.0" mnemonicParsing="false" text="save" />
+      <Label layoutX="142.0" layoutY="135.0" text="Label" />
+      <Label layoutX="136.0" layoutY="191.0" text="Label" />
+      <RadioButton id="radio2" fx:id="radio2" layoutX="170.0" layoutY="245.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton id="radio3" fx:id="radio3" layoutX="170.0" layoutY="272.0" mnemonicParsing="false" text="RadioButton" />
+      <Label layoutX="128.0" layoutY="290.0" text="Label" />
+      <CheckBox id="check2" fx:id="check2" layoutX="164.0" layoutY="326.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox id="check3" fx:id="check3" layoutX="177.0" layoutY="351.0" mnemonicParsing="false" text="CheckBox" />
+   </children>
+</AnchorPane>
