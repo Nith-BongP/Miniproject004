@@ -2,10 +2,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
-public class Controller{
+public class Controller { 
 
     @FXML
     private CheckBox check1;
@@ -30,6 +31,9 @@ public class Controller{
 
     @FXML
     private RadioButton radio3;
+
+    @FXML
+    private Label result;
 
     @FXML
     private Button save;
