@@ -16,8 +16,6 @@ public void start(Stage stage) throws Exception {
 
     Scene scene = new Scene(loader.load());
 
-
-
     stage.setScene(scene);
     stage.show();
 
