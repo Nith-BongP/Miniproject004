@@ -10,7 +10,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="255.0" layoutY="35.0" text="Mini Project 4" />
@@ -19,8 +18,8 @@
       <DatePicker id="date" fx:id="date" layoutX="274.0" layoutY="127.0" />
       <CheckBox id="check1" fx:id="check1" layoutX="164.0" layoutY="288.0" mnemonicParsing="false" text="Filter Design" />
       <RadioButton id="radio1" fx:id="radio1" layoutX="171.0" layoutY="191.0" mnemonicParsing="false" text="Department of GTR" />
-      <Label fx:id="result" layoutX="535.0" layoutY="347.0" text="result" />
-      <Button id="save" fx:id="save" layoutX="292.0" layoutY="356.0" mnemonicParsing="false" text="save" />
+      <Label layoutX="535.0" layoutY="347.0" text="Label" />
+      <Button id="save" fx:id="save" defaultButton="true" layoutX="292.0" layoutY="356.0" mnemonicParsing="false" text="save" />
       <Label layoutX="98.0" layoutY="131.0" text="2. What is your date of birth ?" />
       <Label layoutX="97.0" layoutY="173.0" text="3. Which is your department ?" />
       <RadioButton id="radio2" fx:id="radio2" layoutX="169.0" layoutY="218.0" mnemonicParsing="false" text="Department of GGG" />
