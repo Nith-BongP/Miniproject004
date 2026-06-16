@@ -50,11 +50,15 @@ public class Controller {
 
     @FXML
     void on_submit(ActionEvent event) {
-        String name = this.name.getText();
-        //
-        String dateStr = this.date.getValue() != null ? this.date.getValue().toString() : "N/A";
-        //
+
+        String studentName = name.getText();
+
+        String dateStr = (date.getValue() != null)
+                ? date.getValue().toString()
+                : "N/A";
+
         String department = "N/A";
+
         if (radio1.isSelected()) {
             department = radio1.getText();
         } else if (radio2.isSelected()) {
@@ -62,12 +66,31 @@ public class Controller {
         } else if (radio3.isSelected()) {
             department = radio3.getText();
         }
-        
-        // Output the collected data
-        System.out.println("Name: " + name);
-        System.out.println("Date: " + dateStr);
-        System.out.println("Department: " + department);
 
+        String courses = "";
+
+        if (check1.isSelected()) {
+            courses += check1.getText() + "\n";
+        }
+
+        if (check2.isSelected()) {
+            courses += check2.getText() + "\n";
+        }
+
+        if (check3.isSelected()) {
+            courses += check3.getText() + "\n";
+        }
+
+        if (courses.isEmpty()) {
+            courses = "N/A";
+        }
+
+        String results = "Selected Options:\n";
+        results += "Name: " + studentName + "\n";
+        results += "Date: " + dateStr + "\n";
+        results += "Department: " + department + "\n";
+        results += "Courses:\n" + courses;
+
+        System.out.println(results);
     }
-
 }
