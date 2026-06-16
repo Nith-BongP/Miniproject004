@@ -22,8 +22,8 @@
          <toggleGroup>
             <ToggleGroup fx:id="Department" />
          </toggleGroup></RadioButton>
-      <Label layoutX="535.0" layoutY="347.0" text="Label" />
-      <Button id="save" fx:id="save" defaultButton="true" layoutX="292.0" layoutY="356.0" mnemonicParsing="false" text="save" />
+      <Label layoutX="535.0" layoutY="347.0" text="result" />
+      <Button id="save" fx:id="save" defaultButton="true" layoutX="292.0" layoutY="356.0" mnemonicParsing="false" onAction="#save" text="save" />
       <Label layoutX="98.0" layoutY="131.0" text="2. What is your date of birth ?" />
       <Label layoutX="97.0" layoutY="173.0" text="3. Which is your department ?" />
       <RadioButton id="radio2" fx:id="radio2" layoutX="169.0" layoutY="218.0" mnemonicParsing="false" text="Department of GGG" toggleGroup="$Department" />
